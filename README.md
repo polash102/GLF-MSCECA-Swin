@@ -1,7 +1,7 @@
 # Precision Agriculture-Oriented Lemon Leaf Disease Classification Using Global–Local Interaction Learning and Multi-Scale Channel Attention
 
 <p align="center">
-  <img src="assets/workflow.png" alt="Complete research workflow" width="100%" />
+  <img src="workflow.png" alt="Complete research workflow" width="100%" />
 </p>
 
 **Model:** GLF-MSCECA-Swin — Global–Local Fusion Multi-Scale Efficient Channel Attention-enhanced Swin-Tiny Transformer  
@@ -68,7 +68,7 @@ Lemon (*Citrus*) leaf diseases significantly affect fruit quality and agricultur
 
 ### Full workflow
 
-![Complete workflow](assets/workflow.png)
+![Complete workflow](workflow.png)
 
 1. **Preprocess images:** resize to 224 × 224; apply bilateral filtering, CLAHE, and mild unsharp masking.
 2. **Create the data split and augment training samples only.**
@@ -81,11 +81,11 @@ Lemon (*Citrus*) leaf diseases significantly affect fruit quality and agricultur
 
 ### Architecture
 
-![GLF-MSCECA-Swin architecture](assets/architecture.png)
+![GLF-MSCECA-Swin architecture](architecture.png)
 
 ### Multi-scale channel attention and global–local fusion
 
-![Attention block illustration](assets/attention_block.png)
+![Attention block illustration](attention_block.png)
 
 *Figure-label note: some supplied artwork uses “MCCEA”; the manuscript names the proposed module “MSCECA.”*
 
@@ -113,33 +113,33 @@ Lemon (*Citrus*) leaf diseases significantly affect fruit quality and agricultur
 
 The primary D1 test set contained **one error**: a Sooty Mould image was predicted as Healthy Leaf.
 
-![D1 test confusion matrix](assets/confusion_matrix.png)
+![D1 test confusion matrix](confusion_matrix.png)
 
 ### Training and validation dynamics
 
-![Training and validation curves](assets/training_dynamics.png)
+![Training and validation curves](training_dynamics.png)
 
 ### Learned features: t-SNE and UMAP
 
 The trained model shows more compact class groupings in these two-dimensional visualizations than the unadapted pretrained backbone.
 
-![Feature visualizations](assets/feature_visualization.png)
+![Feature visualizations](feature_visualization.png)
 
 ### Token-level attention
 
 Red numbered rectangles show highly attended token regions for example disease images.
 
-![Token attention](assets/token_attention.png)
+![Token attention](token_attention.png)
 
 ### Explainable AI: Grad-CAM++ and LIME
 
 These visualizations highlight image regions influential to example predictions; they do not by themselves prove causal reasoning.
 
-![Grad-CAM++ and LIME examples](assets/xai_explanations.png)
+![Grad-CAM++ and LIME examples](xai_explanations.png)
 
 ### Computational efficiency
 
-![Complexity, runtime, and memory](assets/efficiency.png)
+![Complexity, runtime, and memory](efficiency.png)
 
 ## Additional Analyses Reported in the Paper
 
